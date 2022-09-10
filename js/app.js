@@ -392,6 +392,7 @@ function list(path) {
 function append_files_to_list(path, files) {
     var $list = $('#list');
     // Is it the last page of data?
+	console.log(files)
     var is_lastpage_loaded = null === $list.data('nextPageToken');
     var is_firstpage = '0' == $list.data('curPageIndex');
 
